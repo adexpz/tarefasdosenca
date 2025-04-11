@@ -1,0 +1,21 @@
+using System;
+double gasolina, etanol, total;
+
+Console.WriteLine("digite o preço da gasolina");
+gasolina = double.Parse(Console.ReadLine());
+	
+Console.WriteLine("digite o preço do etanol");
+etanol = double.Parse(Console.ReadLine());
+total = gasolina / etanol;
+
+if (total >= 0.7)
+{
+	
+	Console.WriteLine("compensa gasolina");
+	
+}
+else
+{
+	Console.WriteLine("compensa etanol");
+}
+				  
