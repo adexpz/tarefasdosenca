@@ -1,1 +1,3 @@
-# tarefasdosenca
+// aqui estao algumas atividades que estou fazendo no curso do senac, Antes de eu me torna o mair programador de toda historia...
+11/03/25
+00:50
