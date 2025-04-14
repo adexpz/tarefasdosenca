@@ -1,0 +1,22 @@
+decimal gasolina, etanol, total;
+
+
+Console.WriteLine("degite o preco da gasolina");
+gasolina = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("degite o valor do etanol");
+etanol = Convert.ToInt32(Console.ReadLine());
+
+total = gasolina / etanol;
+
+if ((double ) total >= 0.7)
+{
+    Console.WriteLine("compensa abastecer gasolina");
+
+}
+else
+{
+    Console.WriteLine("Compensa abastecer etanol");
+
+}
+
