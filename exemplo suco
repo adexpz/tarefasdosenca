@@ -1,0 +1,20 @@
+Console.WriteLine("digite a quantidade de sucos");
+string suco = Console.ReadLine();
+
+double precolevador = quantidade >= 10 ? 4.50 : 5.50;
+double precototal = quantidade * precolevador;
+double total2 = quantidade * precolevador;
+
+
+if (int.TryParse(suco, out int quantidade) && quantidade > 10)
+{
+    
+
+    Console.WriteLine("isso custarar " + precototal);
+}
+else
+{
+
+    Console.WriteLine("Você pagará " + total2);
+
+}
