@@ -1,20 +1,18 @@
-Console.WriteLine("digite a quantidade de sucos");
-string suco = Console.ReadLine();
+decimal suco, quantidade, suco2;
 
-double precolevador = quantidade >= 10 ? 4.50 : 5.50;
-double precototal = quantidade * precolevador;
-double total2 = quantidade * precolevador;
+Console.WriteLine("digite quantos sucos irar querer");
+quantidade  = Convert.ToInt32(Console.ReadLine());
 
-
-if (int.TryParse(suco, out int quantidade) && quantidade > 10)
+suco = 5.50M;
+suco2 = 4.50M;
+if (quantidade >= 10)
 {
-    
+    suco2 = 4.50M * quantidade;
+    Console.WriteLine("isso custara " + suco2);
 
-    Console.WriteLine("isso custarar " + precototal);
 }
 else
 {
-
-    Console.WriteLine("Você pagará " + total2);
-
+    suco = 5.50M *quantidade;
+    Console.WriteLine("isso custara "+ suco);
 }
