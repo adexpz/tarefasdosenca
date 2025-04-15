@@ -1,8 +1,4 @@
 using System.ComponentModel.Design;
-using System.Runtime.Intrinsics.Arm;
-using System.Security.Principal;
-
-//filar exemplo 3
 
 Console.WriteLine("digite seu nome");
 string nome = Console.ReadLine();
@@ -10,16 +6,11 @@ string nome = Console.ReadLine();
 Console.WriteLine("O atendimento e prioritario?:");
 string prioritario = Console.ReadLine();
 
-
-
-
-if (prioritario.ToLower() == "sim")
+if (prioritario == "sim")
 {
-    Console.WriteLine("Certo " + nome + ", vai para a fila 1, 2, 3, Elas Sao prioritarias");
-
+    Console.WriteLine("certo vai para o caixa 1,2,3 eles sao prioritarios");
 }
 else
 {
-    Console.WriteLine("certo " + nome + ",vai para qualquer fila exeto 1,2,3 elas sao prioritarias");
-
+    Console.WriteLine("certo vai para qualuqer um dos caixa menos 1,2,3 eles sao prioritarios");
 }
