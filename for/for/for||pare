@@ -1,0 +1,9 @@
+using System;
+int tabuada = 3;
+for (int calculo = 0; calculo <= 10; calculo++)
+{
+	int resultado = calculo * tabuada;
+	
+	Console.WriteLine(" 3 x "+calculo+" : "+resultado);
+	
+}
