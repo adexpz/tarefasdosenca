@@ -1,0 +1,19 @@
+decimal valorsacado, maiorvalorSacado = 0, totalsacado = 0, mediasaques;
+
+for (int contador = 0; contador < 5; contador++)
+{
+    Console.WriteLine("Digite o valor do saque");
+    valorsacado = Convert.ToDecimal(Console.ReadLine());
+
+    totalsacado = totalsacado + valorsacado;
+
+    if (valorsacado > maiorvalorSacado)
+    {
+        maiorvalorSacado = valorsacado;
+    }
+}
+
+mediasaques = totalsacado / 10;
+Console.WriteLine("O total sacado foi: R$ " + totalsacado);
+Console.WriteLine("O maior saque foi: R$ " + maiorvalorSacado);
+Console.WriteLine("A média de saque foi: R$ " + mediasaques);
